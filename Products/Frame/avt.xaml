@@ -29,8 +29,8 @@
             <PasswordBox x:Name="Pass" FontSize="14" Margin="10" Height="42" Width="301"></PasswordBox>
         </StackPanel>
         <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="2" Grid.Column="1">
-            <Button Content="Войти"  Height="39" Click="Button_Click" Background="#FF498C51" Width="74" Foreground="White"></Button>
-            <Button Content="Войти как гость" Margin="100,0,0,0" Click="Button_Click_1" Background="#FF498C51" Height="40" Width="124" Foreground="White"></Button>
+            <Button Content="Войти"  Height="40" Click="Button_Click" Background="#FF498C51" Width="86" Foreground="White"></Button>
+            <Button Content="Терминал" Margin="100,0,0,0" Click="Button_Click_1" Background="#FF498C51" Height="40" Width="104" Foreground="White"></Button>
         </StackPanel>
         <StackPanel x:Name="capt" Visibility="Hidden" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center">
             <Label x:Name="CaptchaLabel" Content="AB12CD" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold">

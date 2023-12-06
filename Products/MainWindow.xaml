@@ -11,7 +11,8 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="473*"></ColumnDefinition>
+            <ColumnDefinition Width="67*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="120"></RowDefinition>
@@ -19,12 +20,12 @@
 
         </Grid.RowDefinitions>
         <Image Source="Resourse/logo.png" HorizontalAlignment="Center" Width="96"></Image>
-        <Frame Grid.Row="1" Grid.Column="1" Name="MFR" NavigationUIVisibility="Hidden"></Frame>
-        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="875,0,0,0" Width="205">
+        <Frame Grid.Row="1" Grid.Column="1" Name="MFR" NavigationUIVisibility="Hidden" Grid.ColumnSpan="2"></Frame>
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="875,0,0,0" Width="205" Grid.ColumnSpan="2">
             <Label Name="Naime"  HorizontalAlignment="Right" Margin="20" ></Label>
-            <Button x:Name="Avtoriz" Content="Авторизация"  Width="125" Height="44"  Margin="20" Click="Avtoriz_Click" Foreground="White" Background="#FF498C4E" BorderBrush="{x:Null}"></Button>
+            <Button x:Name="Avtoriz" Content="Вход"  Width="115" Height="44"  Margin="20" Click="Avtoriz_Click" Foreground="White" Background="#FF498C4E" BorderBrush="{x:Null}"></Button>
         </StackPanel>
-        <Button x:Name="Back" Content="Выйти" Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Left" Width="100" Margin="960,28,0,29" Visibility="Hidden" Click="Back_Click"/>
+        <Button x:Name="Back" Content="Выйти" Grid.Row="0" Grid.Column="2"  HorizontalAlignment="Left" Width="114" Margin="0,72,0,0" Click="Back_Click" Background="#FF498C4D" Foreground="White" Visibility="Hidden"/>
         <Frame Grid.Row="1" Grid.Column="0" Name="Menu" NavigationUIVisibility="Hidden" ></Frame>
     </Grid>
 </Window>
