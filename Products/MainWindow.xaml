@@ -1,0 +1,30 @@
+﻿<Window x:Class="Products.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Products.Frame"
+        mc:Ignorable="d"
+           Title="Приложуха" Height="720" Width="1280">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Image Source="Resourse/logo.png" HorizontalAlignment="Center" Width="96"></Image>
+        <Frame Grid.Row="1" Grid.Column="1" Name="MFR" NavigationUIVisibility="Hidden"></Frame>
+        <StackPanel Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Left" Margin="875,0,0,0" Width="205">
+            <Label Name="Naime"  HorizontalAlignment="Right" Margin="20" ></Label>
+            <Button x:Name="Avtoriz" Content="Авторизация"  Width="125" Height="44"  Margin="20" Click="Avtoriz_Click" Foreground="White" Background="#FF498C4E" BorderBrush="{x:Null}"></Button>
+        </StackPanel>
+        <Button x:Name="Back" Content="Выйти" Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Left" Width="100" Margin="960,28,0,29" Visibility="Hidden" Click="Back_Click"/>
+        <Frame Grid.Row="1" Grid.Column="0" Name="Menu" NavigationUIVisibility="Hidden" ></Frame>
+    </Grid>
+</Window>
