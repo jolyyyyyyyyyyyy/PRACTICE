@@ -29,7 +29,7 @@
             <Label Margin="5">Категория</Label>
             <Label Margin="5">Действующая скидка</Label>
             <Label Margin="5">Количество</Label>
-            <Label Margin="5">Опиание</Label>
+            <Label Margin="5" Content="Описание товара"/>
         </StackPanel >
         <StackPanel Grid.Row ="1" Grid.Column="1">
             <TextBox Margin="9" Name="Art"></TextBox>
